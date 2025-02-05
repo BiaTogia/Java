@@ -14,6 +14,7 @@ public class Main {
          computer1.setPrice(1356.69);
          computer1.setDiscountPercent(24.0);
          computer1.setCoupon(0.0);
+         computer1.addWishList();
 
          Computer computer2 = new Computer();
          computer2.setName("Zeiron");
@@ -24,6 +25,7 @@ public class Main {
          computer2.setGraphicsCardCapacity("4GB GT730 ");
          computer2.setPrice(389.54);
          computer2.setCoupon(5.0);
+         computer2.addWishList();
 
          Computer computer3 = new Computer();
          computer3.setName("Apple");
@@ -33,6 +35,7 @@ public class Main {
          computer3.setMemory("256 Gb SSD");
          computer3.setPrice(1641.70);
          computer3.setDiscount(1.02);
+         computer3.addWishList();
 
 
          Computer computer4 = new Computer();
@@ -43,6 +46,7 @@ public class Main {
          computer4.setMemory("1 TB SSD");
          computer4.setPrice(922.29);
          computer4.setDiscountPercent(0.0);
+         computer4.addWishList();
 
 
          Computer[] computers = {computer1, computer2, computer3, computer4};
@@ -53,9 +57,5 @@ public class Main {
          for (Computer computer: computers){
           Computer.showDiscount(computer.getPrice(),computer.getDiscountPercent(),computer.getCoupon(),computer.getDiscount());
          }
-         Computer computer = new Computer();
-         computer.addToWishList();
-
-
     }
 }
